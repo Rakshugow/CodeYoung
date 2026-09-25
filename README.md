@@ -2,11 +2,11 @@
   <img src="public/images/primary_logo.png" alt="Codeyoung Logo" width="280" />
 </p>
 
-<h1 align="center">Codeyoung 1:1 Live Online STEM Learning Platform</h1>
+<h1 align="center">Codeyoung — 1:1 Live Online STEM Learning Platform</h1>
 
 <p align="center">
-  <strong>Next-Generation 1:1 Live Online Education Platform for Kids (Ages 5–18)</strong><br />
-  Featuring Planetary Orbit UI, Interactive Draggable Course Controls, Timezone-Aware Booking Engine, and an In-Browser Live Classroom with a Workable Terminal & REPL.
+  <strong>Premier Global 1:1 Live Online Education Platform for Kids & Teens (Ages 5–18)</strong><br />
+  Designed with an Executive Modern Aesthetic, 360° Planetary Orbit UI, Tactile Draggable Course Carousel, Frictionless Timezone-Aware Free Trial Booking, and a Multi-Role Authentication Portal.
 </p>
 
 <p align="center">
@@ -14,156 +14,151 @@
   <img src="https://img.shields.io/badge/TypeScript-5.7-blue?style=for-the-badge&logo=typescript" alt="TypeScript" />
   <img src="https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?style=for-the-badge&logo=tailwind-css" alt="Tailwind CSS" />
   <img src="https://img.shields.io/badge/Framer_Motion-11.15-purple?style=for-the-badge&logo=framer" alt="Framer Motion" />
-  <img src="https://img.shields.io/badge/Deployment-Vercel_Ready-000000?style=for-the-badge&logo=vercel" alt="Vercel Ready" />
+  <img src="https://img.shields.io/badge/STEM.org-Accredited-0A7A51?style=for-the-badge" alt="STEM.org Accredited" />
+  <img src="https://img.shields.io/badge/Status-Production_Ready-orange?style=for-the-badge" alt="Production Ready" />
 </p>
 
 ---
 
 ## 📌 Table of Contents
 
-- [Overview](#-overview)
-- [Key Features](#-key-features)
-  - [1. Dynamic Hero & 360° Planetary Orbit](#1-dynamic-hero--360-planetary-orbit)
-  - [2. Courses Section with Draggable Carousel & Scrub Bar](#2-courses-section-with-draggable-carousel--scrub-bar)
-  - [3. Multi-Step Timezone-Aware Booking Engine](#3-multi-step-timezone-aware-booking-engine)
-  - [4. Interactive 1:1 Classroom with Workable Terminal & REPL](#4-interactive-11-classroom-with-workable-terminal--repl)
-  - [5. Collaborative HTML5 Math & Logic Whiteboard](#5-collaborative-html5-math--logic-whiteboard)
-  - [6. Course Syllabus Trees](#6-course-syllabus-trees)
-- [Terminal CLI Command Reference](#-terminal-cli-command-reference)
+- [Platform Overview](#-platform-overview)
+- [Aesthetic & Modern UI Design](#-aesthetic--modern-ui-design)
+- [The 100% Free Trial Experience](#-the-100-free-trial-experience)
+- [Multi-Role Authentication & Login Portal (`/login`)](#-multi-role-authentication--login-portal-login)
+- [Interactive 1:1 Virtual Classroom with Workable Terminal](#-interactive-11-virtual-classroom-with-workable-terminal)
+- [Interactive Courses & Draggable Carousel](#-interactive-courses--draggable-carousel)
 - [Architecture & Tech Stack](#-architecture--tech-stack)
 - [Project Directory Structure](#-project-directory-structure)
-- [Design System & Color Tokens](#-design-system--color-tokens)
-- [Getting Started & Local Setup](#-getting-started--quick-setup)
-- [Deployment Guide](#-deployment-guide)
-- [Verification & Quality Assurance](#-verification--quality-assurance)
+- [Getting Started & Local Setup](#-getting-started--local-setup)
+- [Publishing & Deployment](#-publishing--deployment)
 
 ---
 
-## 🌟 Overview
+## 🌟 Platform Overview
 
-**Codeyoung** is an international EdTech web application engineered to deliver engaging 1:1 live STEM education (Coding, Math, English, Science, Robotics, and Financial Literacy) to K-12 students across the US, UK, Canada, Australia, India, and the Middle East.
-
-Built with **Next.js 14 (App Router)**, **TypeScript**, **Tailwind CSS**, and **Framer Motion**, the application features:
-- High-trust executive branding and formal academic typography.
-- Frictionless parental onboarding with automated local timezone detection.
-- Complete virtual classroom simulation featuring real JavaScript execution in an interactive browser terminal shell.
+**Codeyoung** is an international STEM education platform empowering young minds across the US, UK, Canada, Australia, India, and the Middle East. The curriculum spans **Coding**, **Mathematics**, **English Communication**, **Science**, **Robotics**, and **Financial Literacy**, connecting students with the top 1% of certified mentors for personalized 1:1 learning.
 
 ---
 
-## 🚀 Key Features
+## ✨ Aesthetic & Modern UI Design
 
-### 1. Dynamic Hero & 360° Planetary Orbit
-- **Enlarged Hero Visual**: High-resolution central student illustration representing interactive live learning.
-- **Continuous Planetary Orbit**: Six subject badges (**Coding**, **Math**, **English**, **Science**, **Robotics**, and **Finance**) glide continuously along a 360° orbital ring around the student.
-- **Counter-Rotation Physics**: Employs synchronized `@keyframes orbitSpin` and `@keyframes counterOrbitSpin` to guarantee badges stay upright and readable at every point along their orbit.
+The entire user interface has been crafted to deliver an executive, beautiful, and deeply engaging digital experience:
 
-### 2. Courses Section with Draggable Carousel & Scrub Bar
-- **Sliding Spring Segmented Filter**: Floating category pills with Framer Motion spring physics (`layoutId="activeCourseTab"`).
-- **Dual Layout Views**:
-  - **Draggable Carousel View**: Touch-swipe and mouse-drag course cards with elastic boundary resistance (`drag="x"`).
-  - **Grid View**: Side-by-side card overview for comparison.
-- **Tactile Draggable Scrub Bar**: A physical drag handle with a grip icon and interactive step dots allowing users to scrub through courses in real time.
-- **High-Contrast Orange CTAs**: All *"Book Free Trial"* action buttons use a vibrant `#F97316` background with hover lift and arrow micro-interactions.
+- **Formal Typography Hierarchy**: Powered by **Satoshi** for bold, authoritative headings, paired with **Inter** for crystal-clear readability, and **Plus Jakarta Sans** for modern metric displays.
+- **Deep Slate & Vibrant Orange Palette**: Built on an executive dark slate base (`#0F172A` / `#080C14`), balanced with crisp white surfaces, soft cream backgrounds (`#FFFDF7`), warm gold badges (`#F59E0B`), and vibrant high-contrast orange call-to-action buttons (`#F97316`).
+- **360° Planetary Subject Orbit**: The central hero visual features six subject badges orbiting the learner in continuous 360° planetary motion. Synchronized counter-rotation keyframes ensure every badge remains upright and readable throughout its revolution.
+- **Framer Motion Micro-Interactions**: Smooth spring physics (`type: "spring", stiffness: 450, damping: 35`) powering segmented tab controls, hover card elevations, and tactile drag controls.
+- **Glassmorphic Surface Design**: Modern frosted glass containers (`backdrop-blur-md bg-white/95`) with subtle borders (`border-slate-200/90`) and ambient radiant gradients that eliminate visual clutter.
 
-### 3. Multi-Step Timezone-Aware Booking Engine (`/book-a-demo`)
-- **Step 1: Parent & Learner Registration**:
-  - Auto-detects client timezone via `Intl.DateTimeFormat` (EDT, CDT, PDT, GMT, IST, AEST, GST).
-  - Validates contact information and course/grade preferences.
-- **Step 2: Interactive Date & Slot Scheduling**:
-  - 5-column calendar date selector with today/tomorrow indicators.
-  - Dynamically fetches local availability from `/api/slots`, clearly distinguishing between `✓ Available` and `Fully Booked` slots.
-- **Step 3: Instant Confirmation & Classroom Handoff**:
-  - Confetti celebration, unique booking reference ID, assigned certified mentor profile, and direct one-click link into the live classroom.
+---
 
-### 4. Interactive 1:1 Classroom with Workable Terminal & REPL (`/classroom/[slug]`)
-- **Real JavaScript Code Execution**:
-  - Clicking **"Run Code ▶"** evaluates code in an isolated runtime sandbox.
-  - Intercepts `console.log`, `console.error`, and `console.warn`, displaying outputs with live timestamps and millisecond execution benchmarks.
+## 🎁 The 100% Free Trial Experience
+
+Codeyoung offers parents and students a completely free, risk-free opportunity to experience live 1:1 mentorship before enrolling.
+
+### Key Highlights of the Free Trial:
+- **Zero Cost & Zero Obligation**: 100% complimentary 60-minute session. **No credit card required**, no hidden fees, and zero commitment.
+- **Top 1% Certified Mentors**: Every trial is conducted live 1:1 by a vetted, degree-holding STEM educator who personalizes the lesson to the child's age, grade, and current skill level.
+- **Build a Working Project in Session 1**: Rather than a static lecture, students immediately write working code, build interactive games, or solve mental math shortcuts directly in the live browser.
+- **Comprehensive Diagnostic Skill Report**: Parents receive an in-depth mentor evaluation assessing the child's logical reasoning, creative problem-solving instincts, and an individualized roadmap for academic acceleration.
+
+### Frictionless 3-Step Booking Wizard (`/book-a-demo`):
+1. **Parent & Learner Profile**: Automatic client timezone detection (EDT, CDT, PDT, GMT, IST, AEST, GST) ensures class times fit family schedules without timezone confusion.
+2. **Interactive Date & Slot Picker**: Select preferred days using intuitive calendar cards and real-time available time slots.
+3. **Instant Confirmation & Live Classroom Handoff**: Celebratory confetti trigger, reference ID generation, assigned mentor details, and immediate one-click access into the live virtual classroom.
+
+---
+
+## 🔐 Multi-Role Authentication & Login Portal (`/login`)
+
+The **Login Portal** provides a secure, unified dashboard tailored for students, parents, and educators.
+
+```mermaid
+flowchart LR
+    Login["/login Portal"] --> Student["Student Portal"]
+    Login --> Parent["Parent Dashboard"]
+    Login --> Mentor["Mentor & Admin Console"]
+    
+    Student --> Class["1-Click Classroom Entry"]
+    Student --> Milestone["Track Lesson Badges"]
+    
+    Parent --> Progress["View Mentor Reports"]
+    Parent --> BookingMgmt["Manage Trial Sessions"]
+    
+    Mentor --> Fleet["Fleet Capacity Monitor"]
+    Mentor --> Roster["Live Booked Trials Roster"]
+```
+
+### 1. Student Access
+- **Flexible Sign-In**: Quick authentication using Mobile Number with OTP or Email & Password.
+- **My Classes Dashboard**: View scheduled trial sessions, start times, and click **"Join Live Classroom"** to enter the interactive workspace instantly.
+- **Achievements & Milestones**: Review badges earned in class and access practice sandbox projects.
+
+### 2. Parent Access
+- **Progress Tracking**: Access comprehensive evaluations, teacher notes, and milestone reports for each child.
+- **Schedule Management**: Reschedule sessions, request mentor changes, or book complementary trial sessions for siblings across different subjects.
+
+### 3. Mentor & Operations Fleet Management (Admin Console)
+- **Role-Based Admin Authentication**: Secured access for teachers and curriculum directors.
+- **Live Trial Bookings Stream**: Real-time list of all booked trials with parent contact information, selected subject, grade, and scheduled slot time.
+- **Fleet Capacity & Allocation Tracker**:
+  - Live monitoring of total active mentors, daily class loads, and remaining fleet capacity.
+  - Auto-refreshes every 5 seconds to prevent overbooking.
+  - One-click mentor launch into any student's live virtual classroom.
+
+---
+
+## 💻 Interactive 1:1 Virtual Classroom with Workable Terminal
+
+Located at `/classroom/[slug]`, the virtual classroom simulates an enterprise-grade live pair-programming and STEM environment.
+
+### Workable Interactive Terminal & REPL:
+- **Live Code Execution**: Clicking **"Run Code ▶"** evaluates editor JavaScript in a captured runtime sandbox, measuring execution speed down to the millisecond.
 - **Interactive Shell Prompt (`guest@codeyoung:~$`)**:
-  - Directly evaluate any mathematical or JavaScript expression (e.g., `2 + 2`, `Math.sqrt(144)`, `calculateScore(2, 3)`).
-  - Command history recall using **Arrow Up** and **Arrow Down** keys.
-  - Maximize/minimize terminal panel toggle and output clear button.
-- **Code Editor**:
-  - Dedicated line numbers gutter.
-  - Pre-built lesson templates (*Game Score Engine*, *Number Guessing Logic*, *Math Arithmetic Runner*).
-  - One-click code reset.
-
-### 5. Collaborative HTML5 Math & Logic Whiteboard
-- Real-time drawing canvas for math scratchwork, geometry diagrams, and logic puzzles.
-- Multi-color palette (Amber, Emerald, Sky Blue, Pink, White).
-- Dedicated Pen and Eraser tools with brush size settings.
-- Instant canvas clear button.
-
-### 6. Course Syllabus Trees (`/courses/[slug]`)
-- Comprehensive curriculum trees for Coding, Math, English, and Science.
-- Interactive age bracket switcher (`Grades K - 2`, `Grades 3 - 5`, `Grades 6 - 8`, `Grades 9 - 12`).
-- Details key modules, capstone projects, tools learned, and real-world outcomes.
+  - Direct execution of mathematical and JavaScript expressions (`15 * 8`, `Math.sqrt(256)`, etc.).
+  - Command history navigation using **Arrow Up** and **Arrow Down** keys.
+  - Supported terminal commands:
+    - `run` / `node` — Execute the current code in the editor.
+    - `test` — Run automated 3-part test assertions on student functions.
+    - `help` — Show all supported commands and shortcuts.
+    - `ls` — List sandbox files (`lesson_sandbox.js`, `README.md`).
+    - `cat <file>` — Inspect workspace documents.
+    - `whoami` — Output student session reference.
+    - `mentor` — Receive dynamic feedback from Mentor Viji.
+    - `clear` — Clear the console output.
+- **HTML5 Collaborative Math Whiteboard**: Interactive drawing canvas featuring pen/eraser modes, multi-color palette, and brush thickness controls.
+- **Live Audio & Video Controls**: Student camera stream via `getUserMedia` with fallback avatar, mentor audio controls, and screen sharing.
+- **Interactive Milestones**: Dynamic checklist updating session progress in real time.
 
 ---
 
-## 💻 Terminal CLI Command Reference
+## 🎛 Interactive Courses & Draggable Carousel
 
-The in-classroom terminal is fully functional and supports the following commands:
+The curriculum showcase on the homepage features two viewing experiences:
 
-| Command | Description | Example Usage |
-|---|---|---|
-| `run` or `node` | Executes the code currently in the code editor | `run` |
-| `test` | Runs an automated 3-part test suite on student functions | `test` |
-| `help` | Lists all available terminal commands and usage instructions | `help` |
-| `ls` | Lists project files in the sandbox workspace | `ls` |
-| `cat <file>` | Reads and displays the contents of a workspace file | `cat README.md` |
-| `mentor` | Queries Mentor Viji for instant pedagogical advice and hints | `mentor` |
-| `whoami` | Displays student identity, session reference ID, and connection status | `whoami` |
-| `date` | Prints the current session timestamp | `date` |
-| `clear` or `cls` | Clears the terminal output screen | `clear` |
-| `<JS Expression>` | Evaluates any valid JavaScript or math calculation directly | `15 * 8` or `Math.PI` |
+1. **Draggable Carousel with Scrub Bar**:
+   - Physically drag or swipe course cards horizontally with elastic boundary resistance (`drag="x"`).
+   - An interactive **Draggable Scrub Handle** (`GripHorizontal` icon) allows users to scrub across courses or jump directly using step dots.
+   - Smooth previous/next navigation buttons with tactile spring feedback.
+2. **Animated Segmented Category Switcher**:
+   - Filter between *All Subjects*, *Coding*, *Math*, *English*, and *Science*.
+   - A dark slate pill glides fluidly beneath the selected category using Framer Motion layout animations.
+3. **Curriculum Syllabus Trees (`/courses/[slug]`)**:
+   - Dedicated syllabus pages breaking down age brackets (K-2, 3-5, 6-8, 9-12), module progressions, capstone projects, and learning outcomes.
 
 ---
 
 ## 🏗️ Architecture & Tech Stack
 
-```mermaid
-flowchart TD
-    Client["Browser Client"]
-    
-    subgraph Frontend ["Next.js 14 App Router"]
-        Landing["/ (Landing Page)"]
-        Courses["/courses/[slug]"]
-        Booking["/book-a-demo"]
-        Classroom["/classroom/[slug]"]
-        Login["/login"]
-    end
-    
-    subgraph Engine ["Client Engines"]
-        Orbit["360° Planetary Orbit Keyframe System"]
-        CourseControls["Framer Motion Draggable Carousel + Scrub Bar"]
-        TerminalSandbox["Sandboxed JS Execution Engine + REPL Shell"]
-        CanvasWhiteboard["HTML5 Canvas Drawing Engine"]
-    end
-
-    subgraph Backend ["Serverless API Routes"]
-        SlotsAPI["/api/slots"]
-        BookingsAPI["/api/bookings"]
-        MentorsAPI["/api/mentors"]
-    end
-
-    Client --> Frontend
-    Landing --> Orbit
-    Landing --> CourseControls
-    Classroom --> TerminalSandbox
-    Classroom --> CanvasWhiteboard
-    Booking --> SlotsAPI
-    Booking --> BookingsAPI
-```
-
-### Core Technologies
-- **Framework**: [Next.js 14.2.23](https://nextjs.org/) (App Router, Server & Client Components)
-- **Language**: [TypeScript 5.7.2](https://www.typescriptlang.org/)
-- **Styling**: [Tailwind CSS 3.4.17](https://tailwindcss.com/)
-- **Animation**: [Framer Motion 11.15.0](https://www.framer.com/motion/)
-- **Icons**: [Lucide React 0.468.0](https://lucide.dev/)
-- **Visuals**: [Canvas Confetti 1.9.4](https://www.npmjs.com/package/canvas-confetti)
-- **Analytics**: [Recharts 3.10.1](https://recharts.org/)
+| Component | Technology | Purpose |
+|---|---|---|
+| **Framework** | Next.js 14.2 (App Router) | High-performance hybrid SSR & Client rendering |
+| **Language** | TypeScript 5.7 | End-to-end type safety and zero-error builds |
+| **Styling** | Tailwind CSS 3.4 | Utility-first responsive design tokens |
+| **Motion & Physics** | Framer Motion 11.15 | Spring physics, layout animations, and gesture tracking |
+| **Icons** | Lucide React | Consistent, scalable vector interface icons |
+| **Visual FX** | Canvas Confetti | Celebratory confirmation animations |
 
 ---
 
@@ -172,73 +167,54 @@ flowchart TD
 ```text
 CodeYoung/
 ├── public/
-│   └── images/               # High-resolution logos, badges, and mentor photography
+│   └── images/               # High-res logos, subject icons, mentor portraits
 ├── src/
 │   ├── app/
 │   │   ├── api/
-│   │   │   ├── bookings/     # Booking submission & slot reservation API
-│   │   │   ├── email/        # Email confirmation dispatch API
-│   │   │   ├── mentors/      # Mentor roster & availability API
-│   │   │   └── slots/        # Timezone-converted slot availability API
+│   │   │   ├── bookings/     # Booking creation & slot reservation
+│   │   │   ├── email/        # Confirmation email dispatcher
+│   │   │   ├── mentors/      # Mentor roster & availability engine
+│   │   │   └── slots/        # Timezone-converted slot availability
 │   │   ├── book-a-demo/      # 3-Step trial booking wizard
-│   │   ├── classroom/[slug]/ # 1:1 Live virtual classroom & interactive terminal
-│   │   ├── courses/[slug]/   # Course syllabus & curriculum trees
-│   │   ├── login/            # Student & parent authentication portal
-│   │   ├── globals.css       # Global CSS, orbit keyframes, and custom utilities
-│   │   ├── layout.tsx        # Root HTML layout and font loading
-│   │   └── page.tsx          # Homepage container
+│   │   ├── classroom/[slug]/ # 1:1 Live classroom with workable terminal
+│   │   ├── courses/[slug]/   # Subject curriculum syllabus pages
+│   │   ├── login/            # Student, parent & mentor login portal
+│   │   ├── globals.css       # Orbit keyframes and design variables
+│   │   ├── layout.tsx        # Root HTML wrapper & fonts
+│   │   └── page.tsx          # Main homepage
 │   ├── components/
-│   │   ├── CoursesGrid.tsx   # Draggable carousel, scrub bar, and segmented control
-│   │   ├── Hero.tsx          # Hero visual and 360° counter-rotating planetary orbit
-│   │   ├── Navbar.tsx        # Header navigation and enlarged primary logo
-│   │   ├── Footer.tsx        # Footer navigation and accreditation badges
-│   │   ├── MetricsBar.tsx    # Quantitative proof metrics
-│   │   ├── ReviewsTrustpilot.tsx # Verified customer reviews with country filtering
-│   │   ├── MentorsShowcase.tsx # Top 1% mentor credential cards
-│   │   └── FaqSection.tsx    # Collapsible FAQ accordion
-│   ├── lib/
-│   │   ├── bookingEngine.ts  # Booking logic and timezone slot converters
-│   │   └── mailer.ts         # Email notification service
-│   └── styles/
-│       └── design-tokens.css # Color variables and typography scales
-├── README.md                 # Complete project documentation
+│   │   ├── CoursesGrid.tsx   # Draggable carousel, scrub bar & segmented pill
+│   │   ├── Hero.tsx          # Hero visual & 360° planetary subject orbit
+│   │   ├── Navbar.tsx        # Executive header & primary logo
+│   │   ├── Footer.tsx        # Footer navigation & accreditations
+│   │   ├── MetricsBar.tsx    # Quantitative social proof metrics
+│   │   ├── ReviewsTrustpilot.tsx # Verified customer reviews
+│   │   ├── MentorsShowcase.tsx # Top 1% mentor credentials
+│   │   └── FaqSection.tsx    # Interactive FAQ accordion
+│   └── lib/
+│       ├── bookingEngine.ts  # Booking state & timezone algorithms
+│       └── mailer.ts         # Notification service
+├── README.md                 # Project documentation
 ├── REQUIREMENTS.md           # Software Requirements Specification (SRS)
-├── TRANSCRIPT.md             # Chronological evolution transcript of all requests
-├── tailwind.config.js        # Tailwind theme and animation configuration
-├── tsconfig.json             # TypeScript compiler settings
-└── package.json              # Project dependencies and run scripts
+├── TRANSCRIPT.md             # Chronological evolution log
+├── tailwind.config.js        # Tailwind styling & animations
+└── tsconfig.json             # TypeScript compiler configuration
 ```
 
 ---
 
-## 🎨 Design System & Color Tokens
-
-| Token | Hex Value | Application |
-|---|---|---|
-| **Slate Primary** | `#0F172A` / `#080C14` | Executive typography, dark cards, terminal background |
-| **Action Orange** | `#F97316` / `#FF8A00` | Primary conversion buttons (*"Book Free Trial"*), active highlights |
-| **Warm Amber** | `#F59E0B` / `#FFB800` | Stars, ratings, pricing badges, orbit glows |
-| **Soft Cream** | `#FFFDF7` / `#FAFAFA` | Page backgrounds, subtle light card backgrounds |
-| **Verified Emerald** | `#10B981` | Accreditation badges, terminal success logs, available slots |
-
----
-
-## ⚡ Getting Started & Quick Setup
+## ⚡ Getting Started & Local Setup
 
 ### 1. Prerequisites
 - **Node.js**: v18.17.0 or higher
 - **npm** (or yarn / pnpm)
-- **Git**
 
-### 2. Clone & Install Dependencies
+### 2. Installation
 ```bash
-# Clone the repository
-git clone https://github.com/Rakshugow/CodeYoung.git
-
-# Navigate into the project folder
+# Navigate to project folder
 cd CodeYoung
 
-# Install packages
+# Install dependencies
 npm install
 ```
 
@@ -246,46 +222,31 @@ npm install
 ```bash
 npm run dev
 ```
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+Open **[http://localhost:3000](http://localhost:3000)** in your browser.
 
-### 4. Interactive Route Previews
+### 4. Direct Route Links
 - **Homepage**: `http://localhost:3000/`
-- **Book a Free Trial**: `http://localhost:3000/book-a-demo`
-- **Live Classroom & Terminal**: `http://localhost:3000/classroom/demo-CY-MUHHROJ3-636`
-- **Coding Curriculum**: `http://localhost:3000/courses/coding`
-
-### 5. Production Build
-```bash
-# Build optimized production bundle
-npm run build
-
-# Start production server
-npm run start
-```
+- **Book Free Trial**: `http://localhost:3000/book-a-demo`
+- **Login Portal**: `http://localhost:3000/login`
+- **Live Classroom**: `http://localhost:3000/classroom/demo-CY-MUHHROJ3-636`
+- **Coding Syllabus**: `http://localhost:3000/courses/coding`
 
 ---
 
-## 🌐 Deployment Guide
+## 🌐 Publishing & Deployment
 
-### Deploying to Vercel (1-Click)
-1. Push your changes to your GitHub repository:
+The production build compiles cleanly into optimized static & serverless chunks (`npm run build`).
+
+### 1-Click Deployment to Vercel (Recommended):
+1. Push your repository to GitHub:
    ```bash
    git push origin main
    ```
-2. Navigate to [vercel.com/new](https://vercel.com/new).
-3. Import the **`Rakshugow/CodeYoung`** repository.
-4. Click **Deploy**. Vercel will build and deploy the application worldwide with automatic HTTPS.
-
----
-
-## 🧪 Verification & Quality Assurance
-
-- **TypeScript Compilation**: Clean build with zero errors (`npx tsc --noEmit`).
-- **Production Build**: All 13 routes compile cleanly into optimized static & serverless chunks.
-- **Tested Browsers**: Google Chrome, Mozilla Firefox, Apple Safari, Microsoft Edge.
+2. Go to **[vercel.com/new](https://vercel.com/new)** and import your repository.
+3. Click **Deploy**. Vercel will build and deploy the application globally with automatic SSL certificates.
 
 ---
 
 <p align="center">
-  <sub>Built with ❤️ by Rakshith Gowda for Codeyoung Education.</sub>
+  <sub>Codeyoung Education — Empowering the next generation of creators, innovators, and leaders.</sub>
 </p>
